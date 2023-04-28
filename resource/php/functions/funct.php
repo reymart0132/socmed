@@ -176,6 +176,15 @@ function profilePic(){
     }
 }
 
+function profilePicu(){
+    $view = new view();
+    if($view->getdpSRA()!=="" || $view->getdpSRA()!==NULL){
+        echo "<img class='rounded-circle mr-3 profpicu ml-3' alt='100x100' src='resource/img/user.jpg'".$view->getMmSRA().";base64,".base64_encode($view->getdpSRA())."'/>";
+    }else{
+        echo "<img class='rounded-circle profpicu' alt='100x100' src='data:' />";
+    }
+}
+
 function updateProfile(){
     if(input::exists()){
         if(!empty($_POST['College'])){

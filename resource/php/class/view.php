@@ -36,7 +36,7 @@ class view extends config{
         
             foreach ($result as $data) {
                 echo "<div class='mt-3 rounded-pill pt-3 pl-1 w-75 hr pb-3 text-light bg-dark'>";
-                echo profilePic();
+                echo profilePicu();
                 echo $data['username'];
                 echo "</div>";
             }
