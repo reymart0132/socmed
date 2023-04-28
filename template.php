@@ -1,7 +1,11 @@
 <?php
 require_once $_SERVER['DOCUMENT_ROOT'].'/socmed/resource/php/class/core/init.php';
+require_once $_SERVER['DOCUMENT_ROOT'].'/socmed/resource/php/class/viewcollege.php';
+
 isLogin();
 $viewtable = new viewtable();
+$user = new User();
+$nameUser = $user->data()->name;
  ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -43,8 +47,16 @@ $viewtable = new viewtable();
 
         <div class="container-fluid mt-4 puff-in-center">
           <div class="row">
-            <div class="col-md-3">
-              sprint2
+            <div class="col-md-3 bg-primary">
+            <?php profilePic(); ?>
+            <img src="resource/img/isak.jpg" alt=""class="img-fluid rounded-circle headerPic">
+             <?php echo "<p class='name'>$nameUser</p>"; ?>
+             <?php showCollege(); ?>
+             <a href="changepassword.php" style="color: #fff;
+             text-decoration: none;">Change Pass</a>
+             <a href="updateprofile.php" style="color: #fff;
+             text-decoration: none;
+             margin-left: 10px;">Update</a>
             </div>
             <div class="col-md-6">
               sprint3
