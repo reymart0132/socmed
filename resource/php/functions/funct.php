@@ -1,4 +1,9 @@
 <?php
+
+function showCollege() {
+    $viewcollege = new viewcollege();
+    $viewcollege->showusercollege();
+}
 function CheckSuccess($status){
     if($status =='Success'){
         echo '<div class="alert alert-success alert-dismissible fade show col-12" role="alert">
