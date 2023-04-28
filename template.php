@@ -3,6 +3,8 @@ require_once $_SERVER['DOCUMENT_ROOT'].'/socmed/resource/php/class/core/init.php
 require_once $_SERVER['DOCUMENT_ROOT'].'/socmed/resource/php/class/viewcollege.php';
 
 isLogin();
+$view = new view;
+$user = new user();
 $viewtable = new viewtable();
 $user = new User();
 $nameUser = $user->data()->name;
@@ -58,8 +60,17 @@ $nameUser = $user->data()->name;
              text-decoration: none;
              margin-left: 10px;">Update</a>
             </div>
-            <div class="col-md-6">
+            <div class="col-md-6 text-center">
               sprint3
+              <form action="insert.php"  method="POST">
+
+                <input type="hidden" id="bastaid" name="bastaid" value="<?php echo $user->data()->name; ?>">
+                <textarea placeholder="What's on your mind?" name="postArea" id="" cols="50" rows="2"></textarea>
+                <input type="submit" name="submit"  value="Post" class="btn btn-success mb-5 mx-auto"  />
+              </form>
+              <div class="container">
+                <?php include 'view.php'?>
+              </div>
             </div>
             <div class="col-md-3">
               sprint4
