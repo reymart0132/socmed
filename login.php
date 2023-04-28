@@ -28,7 +28,7 @@ require_once $_SERVER['DOCUMENT_ROOT'].'/socialmedia/resource/php/class/core/ini
 
 
                     <form class="text-center border border-light p-5 shadow puff-in-center" action="" method="post" >
-                    <p class="h4 mb-4 text-primary"><img src="resource/img/header2.png" width="auto" height="75" alt="">Sign in</p>
+                    <p class="h4 mb-4 text-primary"><img src="resource/img/header2.png" width="auto" height="75" alt="">Login in</p>
                     <?php logd();?>
                     <input type="text" id="username" class="form-control mb-4" name="username" placeholder="Enter Username" required>
                     <input type="password" id="defaultLoginFormPassword" class="form-control mb-4" placeholder="Enter Password" name ="password" required>
