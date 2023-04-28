@@ -1,3 +1,14 @@
+.chatbox{
+  min-height:80vh;
+  background-color: grey;
+  color: white;
+}
+
+
+a.logout{
+    font-size: 60%;
+}
+
 .st{
     font-size: 16px;
 }
