@@ -63,6 +63,11 @@ $nameUser = $user->data()->name;
             </div>
             <div class="col-md-3">
               sprint4
+              <?php
+              echo "<br>";
+              $view = new view();
+              $view->getnames();
+              ?>
             </div>
           </div>
         </div>
